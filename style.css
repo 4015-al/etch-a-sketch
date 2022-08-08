@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,body {
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  height: 42px;
+  background-color: #242424;
+  color: #eee;
+}
+
+footer {
+  background-color: #242424;
+  color: #fffd;
+  height: 42px;
+  position: relative;
+  font-size: small;
+}
+
+footer div {
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  background-color: #ddd;
+  min-height: calc(100% - 2*42px);
+
+  /* center .grid-container vertically */
+  position: relative;
+}
+
+.grid {
+  /* background-color: #1337; */
+  border: #444 solid 1px;
+  margin: auto;
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+
+}
+
+.grid > * {
+  flex: auto;
+}
+
+.cell {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: dotted 1px #aaa;
+  text-align: center;
+}
+
+/* Helpers */
+/* center-vertically */
+.v-center {
+  /*
+  the container of v-centred element should have
+  position: relative;
+  */
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+/* center vertically & horizontally */
+.vh-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
