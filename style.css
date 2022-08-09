@@ -3,7 +3,8 @@
   padding: 0px;
 }
 
-html,body {
+html,
+body {
   height: 100%;
 }
 
@@ -29,7 +30,7 @@ footer div {
 
 main {
   background-color: #ddd;
-  min-height: calc(100% - 2*42px);
+  min-height: calc(100% - 2 * 42px);
 
   /* center .grid-container vertically */
   position: relative;
@@ -42,7 +43,6 @@ main {
   display: flex;
   flex: auto;
   flex-wrap: wrap;
-
 }
 
 .grid > * {
@@ -60,8 +60,7 @@ main {
 /* Helpers */
 /* center-vertically */
 .v-center {
-  /*
-  the container of v-centred element should have
+  /* the container of v-centred element should have
   position: relative;
   */
   position: absolute;
@@ -73,6 +72,10 @@ main {
 
 /* center vertically & horizontally */
 .vh-center {
+  /* the container of vh-centred element should have
+  position: relative;
+  */
+
   position: absolute;
   left: 50%;
   top: 50%;
