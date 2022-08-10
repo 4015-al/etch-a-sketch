@@ -43,11 +43,9 @@ function createGrid() {
 
   container.appendChild(grid);
 
-  for (let i = 0; i < gridSize; i++) {
-    for (let j = 0; j < gridSize; j++) {
+  for (let i = 0; i < gridSize*gridSize; i++) {
       let c = createCell()
       grid.appendChild(c)
-    }
   }
 }
 
